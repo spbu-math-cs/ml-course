@@ -11,6 +11,7 @@
 \usepackage{verbatim}                                      % Для вставки кода в презентацию
 \usepackage{animate}                                       % Для вставки видео в презентацию
 \usepackage{xmpmulti}                                      % Для вставки gif в презентацию
+\usepackage{multirow}
 
 \usetikzlibrary{arrows,snakes,backgrounds}                 % Для отрисовки стрелок
 
@@ -24,6 +25,7 @@
 \usecolortheme{crane}
 
 \newtheorem*{remark}{Замечание}
+\newtheorem*{question}{Вопрос}
 
 \title{Лекция 1. Свёрточные нейронные сети}
 \author{Александр Юрьевич Авдюшенко}
@@ -39,6 +41,7 @@
 \titlepage
 \end{frame}
 
+
 { % all template changes are local to this group.
     \setbeamertemplate{navigation symbols}{}
     \begin{frame}<article:0>[plain]
@@ -52,11 +55,13 @@
      \end{frame}
 }
 
+
 \begin{frame}
   \frametitle{Hubel \& Wiesel (1959)}
   \framesubtitle{История}
   The Nobel Prize in Physiology or Medicine, 1981
 \end{frame}
+
 
 { % all template changes are local to this group.
     \setbeamertemplate{navigation symbols}{}
@@ -71,6 +76,7 @@
      \end{frame}
 }
 
+
 \begin{frame}
   \frametitle{Идея иерархической организации}
   \framesubtitle{История}
@@ -79,6 +85,7 @@
                      height=0.8\paperheight]{hierarchy_vision.jpg}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Fukushima (1980)}
@@ -90,6 +97,7 @@
   Уже использовались «свёртки» и активации, но без градиентного спуска и обучения с учителем
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Lekun, Bottou, Bengio, Haffner (1998)}
   \framesubtitle{Первый успех}
@@ -98,6 +106,7 @@
                      height=0.33\paperheight]{LeNet.jpg}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Krizhevsky, Sutskever, Hinton (2012)}
@@ -108,6 +117,7 @@
                      height=0.5\paperheight]{AlexNetCNN.png}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Линейная модель}
@@ -125,6 +135,7 @@
   \end{center}
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Нейронная сеть как комбинация линейных моделей}
   \begin{center}
@@ -133,6 +144,7 @@
   \end{center}
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Свёрточная нейронная сеть}
   \begin{center}
@@ -140,6 +152,7 @@
                      width=0.8\paperwidth]{cnn-example.png}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Операция свёртки (convolution) в нейронных сетях}
@@ -150,7 +163,12 @@
   \end{center}
 \end{frame}
 
+
 \begin{frame}
+  \begin{question}
+  Почему «свёртка»?
+  \end{question}
+
   \begin{remark}
   При реализации свёртки эффективно умножается матрица на вектор. Вот, например, \href{https://arxiv.org/pdf/1509.09308.pdf}{статья с реализацией Winograd transformation} в cuDNN.
   \end{remark}
@@ -179,6 +197,7 @@
   \end{center}
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Считаем размер выхода}
   \begin{itemize}
@@ -193,6 +212,7 @@
   Output size = 3 -> 3x3
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Пулинг (pooling, субдискретизация)}
   \begin{center}
@@ -200,6 +220,7 @@
                      width=0.7\paperwidth]{max_pooling.png}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Сигмоидальные функции активации}
@@ -214,7 +235,11 @@
     \item непрерывные аппроксимации пороговых функций
     \item могут приводить к затуханию градиентов или «параличу» сети
   \end{itemize}
+  \begin{question}
+  Какие недостатки у логистического сигмоида?
+  \end{question}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Посмотрим на графики}
@@ -223,6 +248,7 @@
                      width=0.7\paperwidth]{sigm_relu.png}
   \end{center}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{ReLU — Rectified Linear Unit}
@@ -244,6 +270,7 @@
   Николенко С., Кадурин А., Архангельская Е. «Глубокое обучение», Питер, 2018. (стр. 107-113)
 \end{frame}
 
+
 \begin{frame}
   \frametitle{ReLU — Rectified Linear Unit}
   $$\int \sigma(x) dx = \log(1 + e^x) + C$$
@@ -254,9 +281,10 @@
 
   \begin{multline*}
     f(x) = \sum\limits_{i=0}^\infty \sigma(x + \frac12 - i) \approx \int \limits_{1/2}^\infty \sigma(x + \frac12 - y) dy = \\
-    = [-\log(1 + \exp(x+\frac12 - y))]_{y=1/2}^{y=\infty} = \log(1 + \exp(x))
+    = [-\log(1 + \exp(x+\frac12 - y))]_{y=1/2}^{y=\infty} = \log(1 + \exp(x)) = \text{Softplus}(x)
   \end{multline*}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Посмотрим на графики}
@@ -266,6 +294,7 @@
   \end{center}
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Развитие свёрточных сетей}
   \framesubtitle{или краткая история ImageNet}
@@ -274,6 +303,27 @@
                      width=0.7\paperwidth]{image-net-history.jpg}
   \end{center}
 \end{frame}
+
+
+\begin{frame}
+  \begin{question}
+  Что такое ImageNet?
+  \end{question}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{ImageNet}
+  Проект массивной базы данных аннотированных изображений:
+  \begin{itemize}
+    \item 14M+ изображений
+    \item 20K+ классов
+  \end{itemize}
+
+  \includegraphics[keepaspectratio,
+                   width=0.85\paperwidth]{ImageNet-Large-Scale.jpg}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{AlexNet (Krizhevsky, Sutskever, Hinton, 2012)}
@@ -295,39 +345,39 @@
     Финальное качество top5 на ImageNet — 25.8\% ->16.4\%
 \end{frame}
 
+
 \begin{frame}
   \frametitle{Метод накопления импульса (momentum method)}
   Метод накопления импульса [Б.Т.Поляк, 1964] — экспоненциальное скользящее среднее градиента по $\frac{1}{1-\gamma}$ последним итерациям:
 
-  \begin{align*}
-    \nu &= \color{red}{\gamma} \nu + \color{red}{(1-\gamma)} \mathcal{L}_i^\prime(w) \\
-      w &= w - \eta \nu
-  \end{align*}
+  \begin{tabular}{lr}
+    $\nu = \color{red}{\gamma} \nu + \color{red}{(1-\gamma)} \mathcal{L}_i^\prime(w)$ &
+    \multirow{2}{*}{\includegraphics[keepaspectratio,
+                     width=0.3\paperwidth]{momentum_2.jpg}} \\
+      $w = w - \eta \nu$ &
+  \end{tabular}
 
-  Поправка Нестерова [1983]:
-
-  \begin{align*}
-    \nu &= \gamma \nu + (1 - \gamma) \mathcal{L}_i^\prime(w \color{red}{- \eta \gamma v}) \\
-      w &= w - \eta \nu
-  \end{align*}
-
-  % <table style="width:60%">
-  %   <tr>
-  %     <td><img src="images/momentum_2.jpg" alt="momentum" width=600 /></td>
-  %     <td><img src="images/nesterov.jpg" alt="nesterov" width=440 /></td>
-  %   </tr>
-  % </table>
-  % \begin{center}
-  %   \includegraphics[keepaspectratio,
-  %                    width=0.7\paperwidth]{image-net-history.jpg}
-  % \end{center}
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Поправка Нестерова (1983)}
+
+\begin{tabular}{lr}
+  $\nu = \gamma \nu + (1 - \gamma) \mathcal{L}_i^\prime (w \color{red}{- \eta \gamma v})$ &
+  \multirow{2}{*}{\includegraphics[keepaspectratio,
+                   width=0.3\paperwidth]{nesterov.jpg}} \\
+    $w = w - \eta \nu$ &
+\end{tabular}
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Резюме}
   \begin{itemize}
     \item Свёрточные сети очень хорошо подходят для обработки изображений
-    \item По-видимому немного похоже на механизмы биологического зрения
+    \item По-видимому немного похожи на механизмы биологического зрения
     \item При этом гибкие и вычислительно эффективные
     \item Сегодня фактический стандарт для задач компьютерного зрения (классификация, детекция, сегментация, генерация)
     \item Будет на следующей лекции
@@ -335,7 +385,7 @@
         \item различные алгоритмы оптимизации: adam, RMSProp
         \item dropout
         \item выбор начального приближения
-        \item ResNet
+        \item ResNet и WideResNet
       \end{itemize}
   \end{itemize}
 
