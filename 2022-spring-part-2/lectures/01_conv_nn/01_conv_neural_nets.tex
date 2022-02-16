@@ -24,13 +24,13 @@
 \usetheme{boxes}
 \usecolortheme{crane}
 
-\newtheorem*{remark}{Замечание}
 \newtheorem*{question}{Вопрос}
 
 \title{Лекция 1. Свёрточные нейронные сети}
 \author{Александр Юрьевич Авдюшенко}
 \institute{МКН СПбГУ}
 \date{17 февраля 2022}
+\titlegraphic{\includegraphics[keepaspectratio,width=0.5\textwidth]{logo_fmkn.png}}
 
 \begin{document}
 %\unitlength=2mm
@@ -39,6 +39,12 @@
 \begin{frame}
 \transdissolve[duration=0.2]
 \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{План второй части машинного обучения}
+  \framesubtitle{Критерии оценок}
+  Всё уже \href{https://github.com/spbu-math-cs/ml-course/blob/main/2022-spring-part-2/plan_and_hws.md}{в гитхабе}.
 \end{frame}
 
 
@@ -165,14 +171,15 @@
 
 
 \begin{frame}
-  \begin{question}
-  Почему «свёртка»?
-  \end{question}
-
-  \begin{remark}
-  При реализации свёртки эффективно умножается матрица на вектор. Вот, например, \href{https://arxiv.org/pdf/1509.09308.pdf}{статья с реализацией Winograd transformation} в cuDNN.
-  \end{remark}
+    \begin{question}
+    Почему «свёртка»?
+    \end{question}
+    \pause
+    \begin{alertblock}{Замечание}
+    При реализации свёртки эффективно умножается матрица на вектор. Вот, например, \href{https://arxiv.org/pdf/1509.09308.pdf}{статья с реализацией Winograd transformation} в cuDNN.
+    \end{alertblock}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Пример операции свёртки}
@@ -380,6 +387,7 @@
     \item По-видимому немного похожи на механизмы биологического зрения
     \item При этом гибкие и вычислительно эффективные
     \item Сегодня фактический стандарт для задач компьютерного зрения (классификация, детекция, сегментация, генерация)
+    \pause
     \item Будет на следующей лекции
       \begin{itemize}
         \item различные алгоритмы оптимизации: adam, RMSProp
@@ -389,6 +397,7 @@
       \end{itemize}
   \end{itemize}
 
+  \pause
   Что ещё можно посмотреть?
   \begin{itemize}
     \item \href{https://cs.stanford.edu/people/karpathy/convnetjs/}{Демо от Андрея Карпаты}
