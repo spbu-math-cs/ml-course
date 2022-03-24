@@ -520,7 +520,7 @@
 
   Вероятность слова $w_t$ в заданном контексте $C_t = (w_{t-m}, \dots, w_{t-1}, w_{t+1}, \dots, , w_{t+m})$
 
-  $$p(w_{t} = w|C_t) = \text{SoftMax}_{w \in W} \left<u_w, v^{-t} \right> $$
+  $$p(w_{t} = w|C_t) =    \underset{w \in W}{\text{SoftMax}} \left<u_w, v^{-t} \right> $$
 
   $v^{-t} = \frac{1}{2m} \sum\limits_{w \in C_t} v_w$ — средний вектор слов из контекста $C_t$
 
@@ -531,7 +531,7 @@
   \vspace{1cm}
   {\bf Критерий} максимума лог-правдоподобия, $U, V \in \mathbb{R}^{|W| \times d}$:
 
-  $$ \sum\limits_{t=1}^n \log p(w_t|C_t) \max\limits_{U, V} $$
+  $$ \sum\limits_{t=1}^n \log p(w_t|C_t) \to \max\limits_{U, V} $$
 
 \end{frame}
 
@@ -618,6 +618,7 @@
     \item word2vec — модель получения векторных представлений слов
   \end{itemize}
   \pause
+  \vspace{1cm}
   Что ещё можно посмотреть?
   \begin{itemize}
     \item \href{https://youtu.be/Eqm8-YqUzAc}{Лекция К.В. Воронцова про тематическое моделирование}
