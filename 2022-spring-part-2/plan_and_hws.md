@@ -63,12 +63,12 @@
   </tr>
   <tr>
     <td>5</td>
-    <td>На пройденные темы</td>
-    <td>практика или соревнование</td>
-    <td>14 апреля</td>
-    <td>4 мая</td>
+    <td>U.S. Patent Phrase to Phrase Matching</td>
+    <td>соревнование</td>
+    <td>31 марта</td>
+    <td>11 мая</td>
     <td>12</td>
-    <td>10 часов</td>
+    <td>10+ часов</td>
   </tr>
   <tr>
     <td>6</td>
