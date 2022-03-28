@@ -15,71 +15,14 @@
  * Занятие 14, 19 мая 2022. Обучение с подкреплением.
 
 ### Домашние задания
-<table style="width:100%">
-  <tr>
-    <th>№ п.п.</th>
-    <th>Тема</th>
-    <th>Тип</th>
-    <th>Старт</th>
-    <th>Финиш</th>
-    <th>Баллы</th>
-    <th>Оценочное время выполнения</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Соревнование по классификации изображений</td>
-    <td>соревнование</td>
-    <td>11 февраля</td>
-    <td>20 марта</td>
-    <td>24</td>
-    <td>20 часов</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Рекуррентная нейронная сеть</td>
-    <td>практика</td>
-    <td>3 марта</td>
-    <td>2 апреля</td>
-    <td>12</td>
-    <td>10 часов</td>
-    </tr>
-  <tr>
-    <td>3</td>
-    <td>Машинный перевод с моделью внимания</td>
-    <td>практика</td>
-    <td>17 марта</td>
-    <td>13 апреля</td>
-    <td>12</td>
-    <td>10 часов</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Бустинг, нейронные сети и разное</td>
-    <td>теория</td>
-    <td>31 марта</td>
-    <td>20 апреля</td>
-    <td>15</td>
-    <td>15 часов</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>U.S. Patent Phrase to Phrase Matching</td>
-    <td>соревнование</td>
-    <td>31 марта</td>
-    <td>11 мая</td>
-    <td>12</td>
-    <td>10+ часов</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Публикация в блоге или соц.сетях</td>
-    <td>пост</td>
-    <td>21 апреля</td>
-    <td>18 мая</td>
-    <td>15</td>
-    <td>20 часов</td>
-  </tr>
-</table>
+|№ п.п.| Тема | Тип | Старт | Финиш | Баллы | Оценочное время выполнения|
+|--|--|--|--|--|--|--|
+|1|[Соревнование по классификации изображений]( https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW1_cnn_competition)| соревнование| 11 февраля | 20 марта | 24 | 20 часов|
+|2|[Рекуррентная нейронная сеть](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW2_rnn_pytorch_pr)|практика|3 марта|2 апреля|12|10 часов|
+|3|[Машинный перевод с моделью внимания](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW3_machine_translation_pr)|практика|17 марта|13 апреля|12|10 часов|
+|4|[Бустинг, нейронные сети и разное](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW4_boosting_nn_theory)|теория|31 марта|20 апреля|15|15 часов|
+|5|[U.S. Patent Phrase to Phrase Matching](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW5_nlp_competition)|соревнование|31 марта|11 мая|12|10+ часов|
+|6|Публикация в блоге или соц.сетях|пост|21 апреля|18 мая|15|20 часов|
 
  * Экзамен в форме собеседования по машинному обучению — 24 балла
 
