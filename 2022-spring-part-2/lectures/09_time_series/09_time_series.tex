@@ -611,6 +611,18 @@
 
 
 \begin{frame}
+  \frametitle{Prophet. События}
+
+  \begin{align*}
+    Z(t) &= [\mathbb{I}(t \in D_1), \dots, \mathbb{I}(t \in D_L)]\\
+         &\omega\ - \text{ величины влияния праздников } \\
+       h(t) &= Z(t)^T \omega
+  \end{align*}
+
+\end{frame}
+
+
+\begin{frame}
   \frametitle{Возможные регрессионные признаки}
 
   \begin{itemize}
@@ -625,23 +637,14 @@
 
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{Prophet. События}
-
-  \begin{align*}
-    Z(t) &= [\mathbb{I}(t \in D_1), \dots, \mathbb{I}(t \in D_L)]\\
-         &\omega\ - \text{ величины влияния праздников } \\
-       h(t) &= Z(t)^T \omega
-  \end{align*}
-
-  \begin{block}{Как ещё можно моделировать временные ряды}
-    \begin{itemize}
-      \item статистики за прошлые периоды и знакомый бустинг
-      \item нейронные сети, как рекуррентные, так и свёрточные
-      \item стекинг моделей
-    \end{itemize}
-  \end{block}
-
+  \frametitle{Как ещё можно моделировать временные ряды}
+  \begin{itemize}
+    \item статистики за прошлые периоды и знакомый бустинг
+    \item нейронные сети, как рекуррентные, так и свёрточные
+    \item стекинг моделей
+  \end{itemize}
 \end{frame}
 
 
