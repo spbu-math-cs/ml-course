@@ -22,7 +22,7 @@
 |3|[Машинный перевод с моделью внимания](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW3_machine_translation_pr)|практика|17 марта|13 апреля|12|10 часов|
 |4|[Бустинг, нейронные сети и разное](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW4_boosting_nn_theory)|теория|31 марта|20 апреля|15|15 часов|
 |5|[U.S. Patent Phrase to Phrase Matching](https://github.com/spbu-math-cs/ml-course/tree/main/2022-spring-part-2/hws/HW5_nlp_competition)|соревнование|31 марта|11 мая|12|10+ часов|
-|6|Публикация в блоге или соц.сетях|пост|21 апреля|18 мая|15|20 часов|
+|6|[Публикация в блоге или соц.сетях](https://github.com/spbu-math-cs/ml-course/blob/main/2022-spring-part-2/hws/HW6_paper_post/paper_post.md)|пост|21 апреля|18 мая|15|20 часов|
 
  * Экзамен в форме собеседования по машинному обучению — 24 балла
 
