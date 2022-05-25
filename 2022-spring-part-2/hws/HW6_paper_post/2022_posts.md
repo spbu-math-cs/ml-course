@@ -1,0 +1,32 @@
+## Список постов студентов по машинному обучению, МКН 2022
+ - Сергей Поспелов https://telegra.ph/Svyaz-grafovyh-nejronnyh-setej-GNN-i-dinamicheskogo-programmirovaniya-DP-v-kontekste-obobshchayushchih-nejrosetevyh-algoritmov-05-18
+ - Георгий Ангени https://github.com/xAnGGx/article-repo/blob/master/article.md
+ - Елизавета Арцер https://vk.com/@eartser-ufrc-ot-zapisi-kashlya-k-diagnostike-covid-19
+ - Александра Кузьмина и Кирилл Гаврилов https://www.youtube.com/watch?v=l9UVI-Ta84M
+ - Александр Гребенщиков https://vk.com/wall369669595_182
+ - Савелий Григорьев https://vk.com/@sava_grigoryev-alphacode-novaya-veha-v-sportivnom-programmirovanii
+ - Айнур Ибатов https://vk.com/@lntellec2al-kolorizaciya-cherno-belyh-izobrazhenii-s-pomoschu-neirosetei
+ - Денис Коротченко https://telegra.ph/Analiz-vremennyh-ryadov-05-18
+ - Кирилл Кузнецов https://github.com/bicikar/mnist_preparation/blob/main/post.md
+ - Даниил Куликов https://vk.com/@daniilsparnasa-uchimsya-ocenivat-shahmatnye-pozicii-s-pomoschu-glubokih-nei
+ - Маргарита Лашина https://vk.com/@margarita03-neironnye-seti-s-razlichnymi-metodami-inicializacii-dlya-obn
+ - Алексей Лесник https://vk.com/wall387597765_83
+ - Дмитрий Мандельштам https://vk.com/@mandelshtamd-paper-ml
+ - Наталья Марцинковская https://telegra.ph/Kak-narisovat-Mona-Lizu-bez-kistej-i-krasok-05-18
+ - Станислав Михайлов https://vk.com/@stasgc-image-captioning-via-yolo-and-gpt3
+ - Андрей Можаев https://vk.com/@mozhay2000-draftrec
+ - Никита Морозов https://t.me/app1606ml
+ - Иван Оглоблин https://telegra.ph/Training-deep-quantum-neural-networks-05-18
+ - Марина Перескокова https://telegra.ph/SOCIAL-CHEMISTRY-05-19
+ - Анастасия Пределина https://t.me/ml_paper_post
+ - Владислав Савинов https://link.medium.com/5LZfA60d3pb
+ - Рустам Садыков https://vk.com/@snob1432e-neironnaya-3d-rekonstrukciya-manhattansdf
+ - Никита Строганов https://vk.com/@stroganovns-postroenie-3d-modeli-cheloveka-na-osnove-2d-snimkov
+ - Вячеслав Тамарин https://habr.com/ru/post/666478/
+ - Валерия Терова https://vk.com/@terovaleriya-deep-learning-in-bioinformatics
+ - Дмитрий Харлапенко https://vk.com/@sampleadress-ml-zs-vision
+ - Дениль Шарипов https://telegra.ph/Predskazanie-cen-akcij-s-pomoshchyu-svertochnyh-setej-modeli-vnimaniya-i-gradientnogo-bustinga-05-17
+ - Михаил Широких https://t.me/miracle_mirror/50
+ - Светлана Шмидт https://vk.com/@lana_2001-few-shot-adaptive-gaze-estimation-overview
+ - Владислав Эм https://vk.com/wall166823591_3152
+ - Андрей Юрко https://habr.com/ru/sandbox/171604/
