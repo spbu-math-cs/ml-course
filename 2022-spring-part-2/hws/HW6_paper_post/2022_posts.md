@@ -19,6 +19,7 @@
  - Иван Оглоблин https://telegra.ph/Training-deep-quantum-neural-networks-05-18
  - Марина Перескокова https://telegra.ph/SOCIAL-CHEMISTRY-05-19
  - Анастасия Пределина https://t.me/ml_paper_post
+ - Артур Саакян https://teletype.in/@hckray/mnk-ml-course
  - Владислав Савинов https://link.medium.com/5LZfA60d3pb
  - Рустам Садыков https://vk.com/@snob1432e-neironnaya-3d-rekonstrukciya-manhattansdf
  - Никита Строганов https://vk.com/@stroganovns-postroenie-3d-modeli-cheloveka-na-osnove-2d-snimkov
