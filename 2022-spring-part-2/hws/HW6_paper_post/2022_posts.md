@@ -12,10 +12,10 @@
  - Маргарита Лашина https://vk.com/@margarita03-neironnye-seti-s-razlichnymi-metodami-inicializacii-dlya-obn
  - Алексей Лесник https://vk.com/wall387597765_83
  - Дмитрий Мандельштам https://vk.com/@mandelshtamd-paper-ml
- - Наталья Марцинковская https://telegra.ph/Kak-narisovat-Mona-Lizu-bez-kistej-i-krasok-05-18
+ - Наталья Марцинковская https://habr.com/ru/post/667146/
  - Станислав Михайлов https://vk.com/@stasgc-image-captioning-via-yolo-and-gpt3
  - Андрей Можаев https://vk.com/@mozhay2000-draftrec
- - Никита Морозов https://t.me/app1606ml
+ - Никита Морозов https://habr.com/ru/post/667860/
  - Иван Оглоблин https://telegra.ph/Training-deep-quantum-neural-networks-05-18
  - Марина Перескокова https://telegra.ph/SOCIAL-CHEMISTRY-05-19
  - Анастасия Пределина https://t.me/ml_paper_post
